@@ -1,0 +1,58 @@
+[
+    {
+        "specialty": "general",
+        "group": "general",
+        "name": "altura",
+        "unit": "cm",
+        "min": "0",
+        "max": "300"
+    },
+    {
+        "specialty": "general",
+        "group": "general",
+        "name": "peso",
+        "unit": "kg",
+        "min": "0",
+        "max": "300"
+    },
+    {
+        "specialty": "general",
+        "group": "general",
+        "name": "temperatura",
+        "unit": "°C",
+        "min": "0",
+        "max": "60"
+    },
+    {
+        "specialty": "general",
+        "group": "general",
+        "name": "presion arterial baja",
+        "unit": "mm/hg",
+        "min": "60",
+        "max": "90"
+    },
+    {
+        "specialty": "general",
+        "group": "general",
+        "name": "presion arterial alta",
+        "unit": "mm/hg",
+        "min": "90",
+        "max": "120"
+    },
+    {
+        "specialty": "general",
+        "group": "general",
+        "name": "respiración",
+        "unit": "respiración/minuto",
+        "min": "12",
+        "max": "18"
+    },
+    {
+        "specialty": "general",
+        "group": "general",
+        "name": "pulso",
+        "unit": "latidos/minuto",
+        "min": "60",
+        "max": "100"
+    }
+]

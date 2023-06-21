@@ -1,0 +1,28 @@
+[
+    {
+        "name": "gestas",
+        "type": "obstétrico"
+    },
+    {
+        "name": "paras",
+        "slug": "paras",
+        "type": "obstétrico"
+    },
+    {
+        "name": "aborto",
+        "slug": "aborto",
+        "type": "obstétrico"
+    },
+
+    {
+        "name": "cesárea",
+        "slug": "cesarea",
+        "type": "obstétrico"
+    },
+
+    {
+        "name": "menarquía",
+        "slug": "menarquia",
+        "type": "obstétrico"
+    }
+]

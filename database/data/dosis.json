@@ -1,0 +1,111 @@
+[
+    {
+        "abreviada": "1 got",
+        "unidad": "gota",
+        "equivalencia": "0,05 mL / 3 mgotas",
+        "plural": "gotas"
+    },
+    {
+        "abreviada": "1 mgota / \u00b5gota",
+        "unidad": "microgota",
+        "equivalencia": null,
+        "plural": "microgotas"
+    },
+    {
+        "abreviada": "1 L",
+        "unidad": "litro",
+        "equivalencia": "1.000 mL / 1.000 cc / 1 Kg",
+        "plural": "litros"
+    },
+    {
+        "abreviada": "1 mL",
+        "unidad": "mililitro",
+        "equivalencia": "1.000 \u00b5L / 1 cc / 20 got",
+        "plural": "mililitros"
+    },
+    {
+        "abreviada": "1 \u00b5L",
+        "unidad": "microlitro",
+        "equivalencia": null,
+        "plural": "microlitros"
+    },
+    {
+        "abreviada": "1 cc / cm\u00b3",
+        "unidad": "cent\u00edmetro c\u00fabico",
+        "equivalencia": "1 ml / 20 got / 60 mgota",
+        "plural": "cent\u00edmetros c\u00fabicos"
+    },
+    {
+        "abreviada": "1 fl oz",
+        "unidad": "onza l\u00edquida",
+        "equivalencia": "30 cc / 29,57 mL / 2 cda / 8 dr",
+        "plural": "onzas l\u00edquidas"
+    },
+    {
+        "abreviada": "1 cdita",
+        "unidad": "cucharadita",
+        "equivalencia": "5 mL / 60 gt",
+        "plural": "cucharaditas"
+    },
+    {
+        "abreviada": "1 cda",
+        "unidad": "cucharada",
+        "equivalencia": "15 mL / 15 cc / 3 cdita",
+        "plural": "cucharads"
+    },
+
+    {
+        "abreviada": "1 vaso o taza",
+        "unidad": "vaso",
+        "equivalencia": "vaso / 8 oz / 250 mL / 250 cc / 250 g",
+        "plural": "vasos"
+    },
+    {
+        "abreviada": "1 Kg",
+        "unidad": "kilogramo",
+        "equivalencia": "1.000 g / 1.000 mL / 2.205 lb?",
+        "plural": "kilogramos"
+    },
+    {
+        "abreviada": "1 g",
+        "unidad": "gramo",
+        "equivalencia": "1.000 mg / 1 cc / 1mL / 20 gt / 1.600.000 UI",
+        "plural": "gramos"
+    },
+    {
+        "abreviada": "1 mg",
+        "unidad": "miligramo",
+        "equivalencia": "1.000 mcg / 0.001 mL",
+        "plural": "miligramos"
+    },
+    {
+        "abreviada": "1 mcg / \u00b5g",
+        "unidad": "microgramo",
+        "equivalencia": "1.000 ng / 0,001 mg / 0,000001 g",
+        "plural": "microgramos"
+    },
+    {
+        "abreviada": "1 oz",
+        "unidad": "onza",
+        "equivalencia": "28,35 g",
+        "plural": "onzas"
+    },
+    {
+        "abreviada": "1 comprimido",
+        "unidad": "comprimido",
+        "equivalencia": null,
+        "plural": "comprimidos"
+    },
+    {
+        "abreviada": "1 tableta",
+        "unidad": "tableta",
+        "equivalencia": null,
+        "plural": "tabletas"
+    },
+    {
+        "abreviada": "1 cápsula",
+        "unidad": "cápsula",
+        "equivalencia": null,
+        "plural": "cápsulas"
+    }
+]
