@@ -40,7 +40,7 @@
             </ul>
         </div>
     </section>
-    <section>
+    <section class="bg-white p-6">
                  <ul class="w-full">
             @if ($patient_disases)
                 @foreach ($patient_disases as $pd)
@@ -49,9 +49,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
                               </svg>
-
-
                         </a>
+                        @if($pd->pivot?->inherited==1)
                             <div class="bg-gray-100 border-l-4 border-orange-500 text-orange-700 p-4 text-sm" role="alert">
                                 @if($pd->pivot?->inherited==1)
                                 <p class="font-bold">{{ __('inherited') }}</p>
@@ -60,9 +59,11 @@
                                 @if($pd->pivot?->deceased==1)
                                 <p class="font-bold">{{ __('familiar fallecido') }}</p>
                                 @endif
-                                <p class="font-bold">{{ $pd->pivot?->observation }}</p>
-
+                                @if($pd->pivot?->observation)
+                                <p class="font-bold bg-red-400">{{ $pd->pivot?->observation }}</p>
+                                @endif
                               </div>
+                        @endif
                     </li>
                 @endforeach
             @else

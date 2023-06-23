@@ -20,10 +20,22 @@
                                 no hay datos
                             </p>
                             <ul class="bg-gray-300 rounded p-3 text-gray-500">
-                                <li class="flex items-center py-3 capitalize">
+                                @if($user->gender =='femenino')
+                                <li class="flex items-center py-3">
                                     <span>status</span>
+                                    @if($user->pregnants()->where('active',1)->count()==0)
                                     <span
-                                        class="ml-auto bg-green-700 text-white px-2 py-1 text-sm cursor-pointer rounded">active</span>
+                                        class="ml-auto bg-green-700 text-white px-2 py-1 text-sm cursor-pointer rounded">
+                                        @livewire('patient.patient-gesta',['user'=>$user->id])
+                                    </span>
+                                    @else
+                                    <span
+                                        class="ml-auto bg-green-700 text-white px-2 py-1 text-sm cursor-pointer rounded">
+                                        CONTROL
+                                    </span>
+                                    @endif
+                                @endif
+
                                 </li>
                                 <li class="flex items-center py-3 capitalize">
                                     <span>{{ __('member since') }}</span>
@@ -32,12 +44,8 @@
                             </ul>
                         </div>
                         <div>
-                        @livewire('patient.patient-disase',['user'=>$user->id])
-                        @livewire('patient.patient-surgery',['user'=>$user->id])
                     </div>
-
                     </div>
-
                 </div>
                 <div class="col-span-1 md:col-span-9 bg-white rounded p-8">
                     <div class="grid grid-cols-1 md:grid-cols-2 text-gray-400">
@@ -81,15 +89,31 @@
                         </div>
                         <a href="#" class="px-6 py-3 bg-gray-300 col-span-full hover:text-gray-600 text-center text-black my-12">{{ __('show full information') }}</a>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 text-gray-400 gap-4">
-                        <div class="col-span-3 md:col-span-2">
-                            @livewire('patient.patient-interview',['user'=>$user->id])
-                        </div>
 
-                        <div class="col-span-3 md:col-span-1">
-                            @livewire('patient.patient-list-interview',['user'=>$user->id])
-                        </div>
-                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 text-gray-400 gap-4">
+                <div class="col-span-3 md:col-span-2">
+                    @livewire('patient.patient-interview',['user'=>$user->id])
+                </div>
+
+                <div class="col-span-3 md:col-span-1">
+                    @livewire('patient.patient-list-interview',['user'=>$user->id])
+                    <div class="my-1" />
+                    @livewire('patient.patient-appoinment',['user'=>$user->id])
+                </div>
+
+            </div>
+        </section>
+        <section  class="my-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div id="datos-de-enfermedades">
+            @livewire('patient.patient-disase',['user'=>$user->id])
+                </div>
+                <div id="datos-de-cirugias">
+            @livewire('patient.patient-surgery',['user'=>$user->id])
                 </div>
             </div>
         </section>
@@ -105,5 +129,4 @@
             </div>
         </section>
     </div>
-
 </x-doctor-layout>

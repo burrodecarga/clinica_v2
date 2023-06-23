@@ -209,4 +209,15 @@ public function edad()
 
 }
 
+public function meses()
+{
+    return  Carbon::parse($this->attributes['birthdate'])->diffInMonths(Carbon::now());
+
+}
+
+
+public function pregnants(){
+    return $this->hasMany(Pregnant::class);
+}
+
 }

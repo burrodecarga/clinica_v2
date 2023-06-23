@@ -206,6 +206,7 @@
     "delete office":"Eliminar consultorio",
     "you want to delete the record":"desea eliminar el registro: ",
     "select media social":"seleccione una red social",
-    "patient vaccination":"vacunación del paciente"
+    "patient vaccination":"vacunación del paciente",
+    "list of appoinments":"listado de citas"
 
 }
